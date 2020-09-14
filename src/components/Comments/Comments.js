@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     root: {
-        minWidth: 275,
+        minWidth: 400,
     },
     bullet: {
         display: 'inline-block',
@@ -12,7 +12,7 @@ const useStyles = makeStyles({
         transform: 'scale(0.8)',
     },
     title: {
-        fontSize: 14,
+        fontSize: 14,color:'warning'
     },
     pos: {
         borderRadius: 20,

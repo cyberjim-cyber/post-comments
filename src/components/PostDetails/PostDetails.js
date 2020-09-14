@@ -23,7 +23,7 @@ const useStyles = makeStyles({
         transform: 'scale(0.8)',
     },
     title: {
-        fontSize: 14,
+        fontSize: 14,color: 'white'
     },
     pos: {
         marginBottom: 20,
@@ -91,14 +91,7 @@ const PostDetails = () => {
                                         {body}
                                     </Typography>
                                 </CardContent>
-                                <CardActions disableSpacing>
-                                    <IconButton aria-label="add to favorites">
-                                        <FavoriteIcon />
-                                    </IconButton>
-                                    <IconButton aria-label="share">
-                                        <ShareIcon />
-                                    </IconButton>
-                                </CardActions>
+                               
                             </Card>
                             <Comments comments={comments} images={images}></Comments>
                         </Grid>

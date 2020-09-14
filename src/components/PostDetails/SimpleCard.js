@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    minWidth: 275,color:'primary'
   },
   bullet: {
     display: 'inline-block',
@@ -28,9 +28,9 @@ export default function SimpleCard() {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.root}>
+    <Card  className={classes.root}>
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography className={classes.title} color="textPrimary" gutterBottom>
           Word of the Day
         </Typography>
         <Typography variant="h5" component="h2">

@@ -33,8 +33,8 @@ const Home = () => {
     }, [])
 
     useEffect(() => {
-        const commentsLength = 100;
-        const image_url = `https://randomuser.me/api/?results=${commentsLength}&inc=picture`;
+        const commentsL = 100;
+        const image_url = `https://randomuser.me/api/?results=${commentsL}&inc=picture`;
         fetch(image_url)
             .then(res => res.json())
             .then(data => setImages(data.results))
@@ -47,7 +47,7 @@ const Home = () => {
     const classes = useStyles();
     return (
         <div>
-            <h1></h1>
+       
             {
                 allPost.length>0 ? <Container>
                                 <div className={classes.root}>

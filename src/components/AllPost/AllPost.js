@@ -7,11 +7,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { IconButton } from '@material-ui/core';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
-import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
+
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 
@@ -51,14 +47,14 @@ const AllPost = (props) => {
 
                 <CardContent>
                 {
-                    image ? <img src={image} className={classes.img} height="40" alt=""/> : <CircularProgress disableShrink />
+                    image ? <img src={image} className={classes.img} height="50" alt=""/> : <CircularProgress disableShrink />
                 }
                 
                     <Typography variant="h5" component="h2">
                         {title}
                     </Typography>
                     <br></br>
-                    <Typography variant="body2" color="textPrimary" component="p">
+                    <Typography variant="body2" bgcolor="success.main" color="primary" component="p">
                         {body}
                     </Typography>
                     <br/>
@@ -67,18 +63,7 @@ const AllPost = (props) => {
                     </Link>
                 </CardContent>
                 <CardActions disableSpacing>
-                    <IconButton aria-label="add to favorites">
-                    <FavoriteIcon />
-                    </IconButton>
-                    <IconButton aria-label="like">
-                    <ThumbUpAltIcon />
-                    </IconButton>
-                    <IconButton aria-label="comment">
-                    <ChatBubbleIcon />
-                    </IconButton>
-                    <IconButton aria-label="share">
-                    <ShareIcon />
-                    </IconButton>
+                    
                     
                 </CardActions>
             </Card>
